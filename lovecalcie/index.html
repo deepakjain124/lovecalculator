@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Love Calculator</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="heading">
+            <h4>love calculator</h4>
+        </div>
+        <div class="names">
+            <form action="" name="myform">
+                <input type="text" name="a" id="firstname" required placeholder="Your Name">
+                <span class="adder">+</span>
+                <input type="text" name="b" id="secondname" required placeholder="Love Name">
+            </form>
+        </div>
+        <div class="btn">
+            <button onclick="percentage()" id="mybtn">Click</button>
+            <br>
+            <input type="text" id="love-amount" placeholder="Love Amount">
+        </div>
+        <p>god bless yor relationship</p>
+    </div>
+    <script>
+        function percentage() {
+            var name = document.getElementById('firstname').value;
+            var lname = document.getElementById('secondname').value;
+            if (name == "") {
+                alert('Please Enter Your Name');
+            } else if (name.length <= 2) {
+                alert('Min Length Is 3');
+            } else if (!isNaN(name)) {
+                alert('Only Charecters Are Allowe');
+            } else if (lname == "") {
+                alert('Please Enter Your Love Name');
+            } else if (lname.length <= 2) {
+                alert('Min Length Is 3');
+            } else if (!isNaN(lname)) {
+                alert('Only Charecters Are Allowe');
+            } else {
+                var amount = Math.random() * 51 + 50;
+                amount = Math.floor(amount);
+                document.getElementById('love-amount').value = amount + "%";
+                document.getElementById("mybtn").disabled = true;
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../image/love-3061483__340.webp");
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    top: 300px;
+    border: none;
+    background: white;
+    padding: 10px;
+}
+
+.heading h4 {
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(219, 69, 69);
+    text-align: center;
+}
+
+form input[type="text"] {
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.card button {
+    width: 130px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: rgb(75, 194, 75);
+    color: white;
+    font-size: 20px;
+}
+
+.btn input[type="text"] {
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card p {
+    background-color: rgb(102, 99, 99);
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 5px 0px 5px 0px;
+    text-transform: capitalize;
+}
+
+@media (max-width:1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form input[type="text"] {
+        margin-left: 10px;
+    }
+    .card p {
+        margin-top: 10px;
+    }
+    .adder {
+        display: flex;
+        justify-content: center;
+    }
+}
